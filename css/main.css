@@ -455,6 +455,14 @@ textarea {
  }
  
  /***nuestros invitados***/
+ ul.lista-invitados{
+   padding-left: 0;
+ }
+ @media only screen and (min-width: 768px){
+  ul.lista-invitados{
+    padding-left: 40px;
+  }
+ }
  ul.lista-invitados li{
    margin:0;
    padding: 10px;
@@ -557,6 +565,14 @@ p.numero{
 }
 
 /****TABLA DE PRECIOS***/
+ul.lista-precios{
+  padding-left: 0;
+}
+@media only screen and (min-width: 768px){
+  ul.lista-precios{
+    padding-left: 40px;
+  }
+}
 .tabla-precio ul{
   padding:0;
 }
