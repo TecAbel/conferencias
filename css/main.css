@@ -633,7 +633,6 @@ div.tabla-precio:hover{
 
 .mapa{
   height: 420px;
-  background-color: green;
 }
 
 /*****testimoniales***/
@@ -898,7 +897,12 @@ div.paquetes .tabla-precio input{
 }
 
 /*****RESUMEN ORDEN***/
-
+#error{
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
 #lista-productos{
   background-color: #e1e1e1;
   padding: 20px;

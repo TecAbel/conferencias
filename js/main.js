@@ -2,6 +2,17 @@
     "use strict";
     var regalo = document.getElementById('regalo');
     document.addEventListener('DOMContentLoaded', function(){
+        //leaflet
+        var map = L.map('mapa').setView([19.434739, -99.144301], 17);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([19.434739, -99.144301]).addTo(map)
+            .bindPopup('Aquí te podemos atender.')
+            .openPopup();
+
         //campos datos usuario
         var nombre = document.getElementById('nombre');
         var apellido = document.getElementById('apellido');
@@ -16,7 +27,7 @@
         //botones y divs
 
         var calcular = document.getElementById('calcular');
-        var erroDiv = document.getElementById('error');
+        var errorDiv =document.getElementById('error');
         var botonRegistro = document.getElementById('btnRegistro');
         var listaProductos = document.getElementById('lista-productos');
         var sumaTotal = document.getElementById('suma-total');
@@ -31,6 +42,24 @@
         pase_dia.addEventListener('blur', mostrarDias);
         pase_dosdias.addEventListener('blur', mostrarDias);
         pase_completo.addEventListener('blur', mostrarDias);
+
+        //campos a validar
+        nombre.addEventListener('blur', validarCampos);
+        apellido.addEventListener('blur', validarCampos);
+        email.addEventListener('blur', validarCampos);
+
+        function validarCampos(){
+            if(this.value == ''){
+                errorDiv.style.display = "block";
+                errorDiv.innerHTML="Este campo es obligatorio";
+                this.style.border ="1px solid red";
+                errorDiv.style.border="1px solid red";
+            }
+            else{
+                errorDiv.style.display = "none";
+                this.style.border ="1px solid #cccccc";
+            }
+        }
 
         function calcularMontos(event){
             event.preventDefault();
