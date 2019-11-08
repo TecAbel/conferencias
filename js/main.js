@@ -133,6 +133,12 @@
 
 
 $(function(){
+
+    //lettering
+
+    $('.nombre-sitio').lettering();
+
+
     ////conferencias
     $("div.ocultar").hide();
     $(".programa-evento .info-curso:first").show();

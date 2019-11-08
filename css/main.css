@@ -191,6 +191,12 @@ textarea {
       max-width: 1200px;
     }
   }
+  /********lettering*******/
+  h1.nombre-sitio span{
+    position: relative;
+    text-shadow: 0 0 30px black;
+  }
+
   /*header*/
   .hero{
     background-image: url("../img/encabezado.jpg");
