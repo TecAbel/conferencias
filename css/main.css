@@ -309,6 +309,9 @@ textarea {
  .navegacion-principal{
    display: none;
  }
+ .navegacion-principal .activo{
+   border-bottom: #fe4918 1px solid;
+ }
  .menu-movil{
    display: none;
  }
@@ -810,6 +813,12 @@ footer.site-footer p.copyright{
 
 
 /****INTERNAS****/
+
+/*****GALERIA****/
+div.galeria a{
+  display: inline-block;
+  margin-bottom: 5px;
+}
 /*****REGISTRO******/
 form.registro h3{
   text-align: center;
