@@ -2,6 +2,8 @@
     "use strict";
     var regalo = document.getElementById('regalo');
     document.addEventListener('DOMContentLoaded', function(){
+
+        
         //leaflet
         var map = L.map('mapa').setView([19.434739, -99.144301], 17);
 
@@ -133,6 +135,20 @@
 
 
 $(function(){
+    // menú fijo
+    var alturaVentana = $(window).height();
+    var alturaBarra = $('.barra').innerHeight();
+    
+    $(window).scroll(function () { 
+        var scroll = $(window).scrollTop();
+        if(scroll > alturaVentana){
+            $('.barra').addClass('fixed');
+            $('body').css({'margin-top':alturaBarra+'px'});
+        }else{
+            $('.barra').removeClass('fixed');
+            $('body').css({'margin-top':'0px'});
+        }
+    });
 
     //lettering
 

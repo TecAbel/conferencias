@@ -291,6 +291,13 @@ textarea {
    display: inline-block;
    width: 100%;
  }
+ .fixed{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 2;
+ }
  .logo{
    width: 75%;
    float: left;
