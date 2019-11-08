@@ -135,7 +135,8 @@
 
 
 $(function(){
-    // menú fijo
+
+    // menú sticky
     var alturaVentana = $(window).height();
     var alturaBarra = $('.barra').innerHeight();
     
@@ -148,6 +149,12 @@ $(function(){
             $('.barra').removeClass('fixed');
             $('body').css({'margin-top':'0px'});
         }
+    });
+
+    //menú responsive
+    $('.menu-movil').click(function () { 
+        $('.navegacion-principal').slideToggle();
+        
     });
 
     //lettering

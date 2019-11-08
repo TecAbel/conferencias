@@ -315,6 +315,7 @@ textarea {
  }
  .navegacion-principal{
    display: none;
+   width: 100%;
  }
  .navegacion-principal .activo{
    border-bottom: #fe4918 1px solid;
@@ -338,6 +339,7 @@ textarea {
      margin-right: 10px;
      padding: 5px 10px;
      display: inline-block;
+
    }
    .navegacion-principal a :last-child{
       padding-right: 0;
@@ -349,7 +351,10 @@ textarea {
    text-decoration: none;
    color: #ffffff;
    font-size: 1.3em;
-   
+   text-align: center;
+   display: block;
+   margin-bottom: 20px;
+   clear: both;
  }
  .navegacion-principal a:hover{
    background-color: #fe4918;
