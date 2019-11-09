@@ -434,6 +434,8 @@ textarea {
    width:100%;
    border-bottom: 1px solid #fe4918;
    padding-block: 10px;
+   
+   padding-bottom: 10px;
  }
  @media only screen and (min-width: 768px){
   nav.menu-programa{
@@ -450,20 +452,21 @@ textarea {
    font-size: 1.2em;
    position: relative;
  }
- nav.menu-programa a.activo::after{
-   content: '';
-   position: absolute;
-   left: 0;
-   right: 0;
-   margin-left: auto;
-   margin-right: auto;
-   height: 20px;
-   width: 30px;
-   bottom: -20px;
-   background-image: url("../img/talleres-flecha.jpg");
-   background-repeat: no-repeat;
- }
+ 
  @media only screen and (min-width: 768px){
+  nav.menu-programa a.activo::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    width: 30px;
+    bottom: -29px;
+    background-image: url("../img/talleres-flecha.jpg");
+    background-repeat: no-repeat;
+  }
   nav.menu-programa a{
     display: table-cell;
   }
