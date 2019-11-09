@@ -338,7 +338,7 @@ textarea {
    .navegacion-principal a{
      margin-right: 10px;
      padding: 5px 10px;
-     display: inline-block;
+     display: inline-block!important;
 
    }
    .navegacion-principal a :last-child{
