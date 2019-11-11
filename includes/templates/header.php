@@ -26,6 +26,8 @@
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
   <!--lightbox-->
   <link rel="stylesheet" href="css/lightbox.css">
+  <!--colorbox-->
+  <link rel="stylesheet" href="css/colorbox.css">
 </head>
 
 <body>
@@ -70,7 +72,7 @@
       <nav class="navegacion-principal">
         <a href="conferencias">Conferencia</a>
         <a href="calendario">Calendario</a>
-        <a href="#">Invitados</a>
+        <a href="invitados">Invitados</a>
         <a href="registro">Reservaciones</a>
       </nav>
     </div>

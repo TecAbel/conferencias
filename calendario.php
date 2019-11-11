@@ -20,7 +20,7 @@
         }
       ?>
 
-      <div class="calendario">
+      <div class="calendario clearfix">
         <?php
             $calendario = array();
             while($eventos = $resultado->fetch_assoc()){
@@ -48,7 +48,7 @@
 
          foreach ($calendario as $dia => $lista_eventos) {?>
 
-         <h3>
+         <h3 class="fechas-cal">
           <i class="fa fa-calendar"></i>
           <?php /*formato a fecha*/ 
 
@@ -82,11 +82,10 @@
            }
          }
         ?>
-        <pre>
-                  <?php var_dump($calendario);?>
-              </pre>
+        
         
       </div>
+      
       <?php $conn->close();?>
   </section>
 

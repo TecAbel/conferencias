@@ -197,6 +197,7 @@ textarea {
     text-shadow: 0 0 30px black;
   }
 
+
   /*header*/
   .hero{
     background-image: url("../img/encabezado.jpg");
@@ -968,6 +969,48 @@ div.paquetes .tabla-precio input{
   font-size: 2em;
   color: #fe4918;
 }
+
+
+  /*****CALENDARIO/*****/
+  div.dia{
+    float: left;
+    width: 50%;
+    border: 1px solid #e1e1e1;
+    min-height: 260px;
+    padding-top: 20px;
+    transition: .3s ease all;
+  }
+  div.dia p{
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  div.dia p.titulo{
+    color: #fe4918;
+  }
+  div.dia i{
+    color: #fe4918;
+  }
+  div.dia:hover{
+    background-color: #e1e1e1;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  h3.fechas-cal{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    display: inline-block;
+    background-color: #fe4918;
+    color: white;
+    padding: 10px;
+  }
+  @media only screen and (min-width:768px){
+    div.dia{
+      width: 33%;
+    }
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
