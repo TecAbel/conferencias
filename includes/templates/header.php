@@ -57,7 +57,7 @@
   <div class="barra">
     <div class="contenedor clearfix">
       <div class="logo">
-        <a href="index.php">
+        <a href="index">
             <img src="img/logo.svg" alt="LOGO">
         </a>
         
@@ -68,10 +68,10 @@
         <span></span>
       </div>
       <nav class="navegacion-principal">
-        <a href="conferencias.php">Conferencia</a>
+        <a href="conferencias">Conferencia</a>
         <a href="#">Calendario</a>
         <a href="#">Invitados</a>
-        <a href="registro.php">Reservaciones</a>
+        <a href="registro">Reservaciones</a>
       </nav>
     </div>
   </div>
