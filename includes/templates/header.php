@@ -24,6 +24,8 @@
   <!--leaflet-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <!--lightbox-->
+  <link rel="stylesheet" href="css/lightbox.css">
 </head>
 
 <body>
@@ -55,7 +57,10 @@
   <div class="barra">
     <div class="contenedor clearfix">
       <div class="logo">
-        <img src="img/logo.svg" alt="LOGO">
+        <a href="index.php">
+            <img src="img/logo.svg" alt="LOGO">
+        </a>
+        
       </div>
       <div class="menu-movil">
         <span></span>

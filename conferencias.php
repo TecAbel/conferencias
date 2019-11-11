@@ -1,4 +1,4 @@
-<?php include_once 'includes\templates\header.php' ?>
+<?php include_once 'includes\templates\header.php'?>
 
 
   <section class="seccion contenedor">
@@ -45,4 +45,4 @@
   </section>
 
 
-  <?php include_once 'includes\templates\footer.php' ?>
+  <?php include_once 'includes\templates\footer.php'?>

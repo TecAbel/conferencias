@@ -837,6 +837,9 @@ footer.site-footer p.copyright{
 /****INTERNAS****/
 
 /*****GALERIA****/
+div.galeria{
+  text-align: center;
+}
 div.galeria a{
   display: inline-block;
   margin-bottom: 5px;
