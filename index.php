@@ -21,13 +21,24 @@
       <div class="contenedor">
         <div class="programa-evento">
           <h2>Programa del evento</h2>
+          <?php
+            try {
+                require_once('includes\functions\bd_conexion.php');
+                $sql =  "SELECT * FROM categoria_evento;";
+                $resultado = $conn->query($sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+            }
+          ?>
           <nav class="menu-programa">
-            <a href="#talleres"><i class="fa fa-code" aria-hidden="true"></i>Talleres</a>
-            <a href="#conferencias"><i class="fa fa-comment" aria-hidden="true"></i>Conferencias</a>
-            <a href="#seminarios"><i class="fa fa-university" aria-hidden="true"></i>Seminarios</a>
+            <?php while($cat = $resultado->fetch_array(MYSQLI_ASSOC)){?>
+              
+              <a href="#<?php echo $cat['cat_evento']?>"><i class="fa <?php echo $cat['icono'] ?>" aria-hidden="true"></i><?php echo $cat['cat_evento'] ?></a>
+            <?php } ?>
           </nav>
-
-          <div class="info-curso ocultar clearfix" id="talleres">
+          
+          <div class="info-curso ocultar clearfix" id="Talleres">
+            
             <div class="detalle-evento">
               <h3>HTML5, CSS3 Y JavaScript</h3>
               <p><i class="fa fa-clock" aria-hidden="true"></i> 16:00 hrs</p>
@@ -43,7 +54,7 @@
             <a href="#" class="button float-right">Ver todos</a>
           </div><!--talleres-->
 
-          <div class="info-curso ocultar clearfix" id="conferencias">
+          <div class="info-curso ocultar clearfix" id="Conferencias">
             <div class="detalle-evento">
               <h3>Cómo ser freelancer</h3>
               <p><i class="fa fa-clock" aria-hidden="true"></i> 10:00 hrs</p>
@@ -59,7 +70,7 @@
             <a href="#" class="button float-right">Ver todos</a>
           </div><!--talleres-->
 
-          <div class="info-curso ocultar clearfix" id="seminarios">
+          <div class="info-curso ocultar clearfix" id="Seminarios">
             <div class="detalle-evento">
               <h3>Diseño UI Móviles</h3>
               <p><i class="fa fa-clock" aria-hidden="true"></i> 17:00 hrs</p>
@@ -80,47 +91,7 @@
     </div>
   </section><!--cierra conferencias-->
 
-  <section class="invitados contenedor seccion">
-    <h2>Nuestros invitados</h2>
-    <ul class="lista-invitados clearfix">
-      <li>
-        <div class="invitado">
-          <img src="img/invitado1.jpg" alt="imagen invitado">
-          <p>Rafael Bautista</p>
-        </div>
-      </li>
-      <li>
-        <div class="invitado">
-          <img src="img/invitado2.jpg" alt="imagen invitado">
-          <p>Diana Smith</p>
-        </div>
-      </li>
-      <li>
-        <div class="invitado">
-          <img src="img/invitado3.jpg" alt="imagen invitado">
-            <p>Anibal Armstrong</p>
-        </div>
-      </li>
-      <li>
-        <div class="invitado">
-          <img src="img/invitado4.jpg" alt="imagen invitado">
-          <p>Lara Fisher</p>
-        </div>
-      </li>
-      <li>
-          <div class="invitado">
-            <img src="img/invitado5.jpg" alt="imagen invitado">
-            <p>Giovani Govea</p>
-          </div>
-      </li>
-      <li>
-          <div class="invitado">
-            <img src="img/invitado6.jpg" alt="imagen invitado">
-            <p>Jessica Mora</p>
-          </div>
-      </li>
-    </ul>
-  </section><!--invitados-->
+  <?php include_once 'includes/templates/invitados.php' ?>
   
   <div class="contador parallax">
     <div class="contenedor">

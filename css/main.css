@@ -318,7 +318,7 @@ textarea {
    display: none;
    width: 100%;
  }
- .navegacion-principal .activo{
+ .navegacion-principal a.activo{
    border-bottom: #fe4918 1px solid;
  }
  .menu-movil{
@@ -1011,6 +1011,14 @@ div.paquetes .tabla-precio input{
       width: 33%;
     }
   }
+
+  /****COLORBOX****/
+
+  div.cboxElement{
+    padding: 30px!important;
+    text-align: center;
+  }
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */

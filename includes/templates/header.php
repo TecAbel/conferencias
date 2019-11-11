@@ -24,13 +24,24 @@
   <!--leaflet-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-  <!--lightbox-->
-  <link rel="stylesheet" href="css/lightbox.css">
-  <!--colorbox-->
-  <link rel="stylesheet" href="css/colorbox.css">
+  <?php 
+    $archivo = basename($_SERVER['PHP_SELF']);
+    $pagina = str_replace('.php','',$archivo);
+
+    if($pagina == 'index' or $pagina == 'invitados'){
+      echo '<!--colorbox-->
+      <link rel="stylesheet" href="css/colorbox.css">';
+    }
+    elseif ($pagina == 'conferencias') {
+      echo '<!--lightbox-->
+      <link rel="stylesheet" href="css/lightbox.css">';
+    }
+  ?>
+  
+  
 </head>
 
-<body>
+<body class="<?php echo $pagina?>">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->

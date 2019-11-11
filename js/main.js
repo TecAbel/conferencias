@@ -140,6 +140,11 @@
 
 
 $(function(){
+    //pagina activa agregar clase a menú
+
+    $('body.conferencias .navegacion-principal a:contains("Conferencia")').addClass('activo');
+    $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
+    $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
 
     // menú sticky
     var alturaVentana = $(window).height();
@@ -195,4 +200,12 @@ $(function(){
         $('#minutos').html(e.strftime('%M'));
         $('#segundos').html(e.strftime('%S'));
     })
+
+    //colorbox
+
+    $('.invitado-info').colorbox({inline: true, width: '50%'});
+
+
+    
+
 });
