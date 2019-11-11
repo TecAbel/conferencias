@@ -69,7 +69,7 @@
       </div>
       <nav class="navegacion-principal">
         <a href="conferencias">Conferencia</a>
-        <a href="#">Calendario</a>
+        <a href="calendario">Calendario</a>
         <a href="#">Invitados</a>
         <a href="registro">Reservaciones</a>
       </nav>
