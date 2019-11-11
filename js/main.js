@@ -5,15 +5,18 @@
 
         
         //leaflet
-        var map = L.map('mapa').setView([19.434739, -99.144301], 17);
+        if(document.getElementById('mapa')){
+            var map = L.map('mapa').setView([19.434739, -99.144301], 17);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
 
-        L.marker([19.434739, -99.144301]).addTo(map)
-            .bindPopup('Aquí te podemos atender.')
-            .openPopup();
+            L.marker([19.434739, -99.144301]).addTo(map)
+                .bindPopup('Aquí te podemos atender.')
+                .openPopup();
+        }
+        
 
         //campos datos usuario
         var nombre = document.getElementById('nombre');

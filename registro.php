@@ -1,51 +1,4 @@
-<!--Autor Abel-->
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <!--font awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <meta name="theme-color" content="#fafafa">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet"> 
-</head>
-
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <header class="site-hero">
-    <div class="hero">
-      <div class="contenido-header">
-        <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-twitter-square"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube-square"></i></a>
-        </nav>
-        <div class="informacion-evento clearfix">
-          <p class="fecha"><i class="far fa-calendar-alt"></i> 12/12/19</p>
-          <p class="ciudad"><i class="fas fa-map-marker-alt"> </i></p>
-          <h1 class="nombre-sitio">CDMXWebCamp</h1>
-        <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
-        </div>
-        
-      </div>
-    </div>
-  </header>
+<?php include_once 'includes\templates\header.php' ?>
 
   <section class="seccion contenedor">
     <h2>Registro de Usuarios</h2>
@@ -229,45 +182,4 @@
   </section>
 
 
-  <footer class="site-footer">
-    <div class="contenedor clearfix">
-      <div class="footer-informacion">
-        <h3>Sobre <span>CDMXWebCamp</span></h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt modi, incidunt dolor quas illum minus velit iusto veniam cupiditate beatae eaque, ut voluptates neque recusandae quos officiis porro consectetur dolore.</p>
-      </div>
-      <div class="ultimos-tuits">
-        <h3>Últimos <span>Tweets</span></h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt modi, incidunt dolor quas illum minus velit iusto veniam cupiditate beatae eaque, ut voluptates neque recusandae quos officiis porro consectetur dolore.</p>
-        <ul>
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat accusamus vitae sunt!</li>
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat accusamus vitae sunt!</li>
-        </ul>
-      </div>
-      <div class="menu">
-        <h3>Redes <span>Sociales</span></h3>
-        <nav class="redes-sociales">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube-square"></i></a>
-          </nav>
-      </div>
-    </div>
-    <p class="copyright">Todos los derechos reservados</p>
-  </footer>
-  
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>-->
-</body>
-
-</html>
+  <?php include_once 'includes\templates\footer.php' ?>
