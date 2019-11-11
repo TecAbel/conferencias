@@ -535,6 +535,7 @@ textarea {
 .invitado:hover img{
   filter: gray;
   -webkit-filter: grayscale(0);
+  transform: scale(1.1);
   -webkit-transform: scale(1.1);
 }
 .invitado p{
