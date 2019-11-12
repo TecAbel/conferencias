@@ -37,7 +37,9 @@
         var listaProductos = document.getElementById('lista-productos');
         var sumaTotal = document.getElementById('suma-total');
 
+        //desactivar btn
 
+        botonRegistro.disabled = true;
         //extras
 
         var etiquetas = document.getElementById('etiquetas');
@@ -109,6 +111,12 @@
                     }
 
                     sumaTotal.innerHTML = "$ " + totalPagar.toFixed(2);
+
+                    
+
+                    botonRegistro.disabled = false;
+
+                    document.getElementById('total_pedido').value = totalPagar;
 
                 }
             }

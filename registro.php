@@ -6,11 +6,11 @@
       <div class="registro caja clearfix" id="datos_usuario">
         <div class="campo">
           <label for="nombre">Nombre: </label>
-          <input type="text" id="nombre" placeholder="tu nombre">
+          <input type="text" id="nombre" name="nombre" placeholder="tu nombre">
         </div>
         <div class="campo">
           <label for="apellido">Apellido: </label>
-          <input type="text" placeholder="tu apellido" id="apellido">
+          <input type="text" placeholder="tu apellido" name="apellido" id="apellido">
         </div>
         <div class="campo">
           <label for="email">Correo: </label>
@@ -174,6 +174,7 @@
             <div id="suma-total">
 
             </div>
+            <input type="hidden" id="total_pedido" name="total_pedido" >
             <input type="submit" value="Pagar" name="submit" class="button" id="btnRegistro">
           </div><!--total-->
         </div><!--caja-->
