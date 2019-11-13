@@ -23,9 +23,22 @@
 
         $pedido = productos_json($boletos, $camisas, $etiquetas);
 
+        //eventos
+
+        $registro = $_POST['registro'];
+
+        $eventos = eventos_json($registro);
         echo '<pre>';
-        var_dump($pedido);
+        var_dump($eventos);
         echo '</pre>';
+
+        try {
+            require_once('includes\functions\bd_conexion.php');
+            $stmt =  $conn->prepare("INSERT INTO `registrados`(`nombre_registrado`, `apellido_registrado`, `email_registrado`, `fecha_registro`, `pases_articulos`, `talleres_registrados`, `regalo`, `total_pagado`) VALUES (?,?,?,?,?,?,?,?)");
+            $STMT->bind_param("ssssssis", $nombre, $apellido, $correo, $fecha, $pedido, $eventos, $relago, $total);
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
 
     ?>
 
